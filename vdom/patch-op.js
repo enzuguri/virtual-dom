@@ -9,7 +9,7 @@ var updateWidget = require("./update-widget")
 module.exports = applyPatch
 
 function applyPatch(vpatch, domNode, renderOptions) {
-    var type = vpatch.type
+    var type = vpatch.patchType
     var vNode = vpatch.vNode
     var patch = vpatch.patch
 

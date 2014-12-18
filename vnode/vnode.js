@@ -67,7 +67,6 @@ function VirtualNode(tagName, properties, children, key, namespace) {
     this.hasThunks = hasThunks
     this.hooks = hooks
     this.descendantHooks = descendantHooks
+    this.version = version
+    this.type = nodeType.VirtualNode
 }
-
-VirtualNode.prototype.version = version
-VirtualNode.prototype.type = nodeType.VirtualNode

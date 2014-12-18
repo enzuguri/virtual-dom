@@ -20,8 +20,9 @@ test("Node is a function", function (assert) {
 })
 
 test("Node type and version are set", function (assert) {
-    assert.equal(Node.prototype.type, nodeType.VirtualNode)
-    assert.deepEqual(Node.prototype.version, version)
+    var node = new Node();
+    assert.equal(node.type, nodeType.VirtualNode)
+    assert.deepEqual(node.version, version)
     assert.end()
 })
 
@@ -31,8 +32,9 @@ test("TextNode is a function", function (assert) {
 })
 
 test("TextNode type and version are set", function (assert) {
-    assert.equal(TextNode.prototype.type, nodeType.VirtualText)
-    assert.deepEqual(TextNode.prototype.version, version)
+    var textNode = new TextNode();
+    assert.equal(textNode.type, nodeType.VirtualText)
+    assert.deepEqual(textNode.version, version)
     assert.end()
 })
 

@@ -5,7 +5,6 @@ module.exports = VirtualText
 
 function VirtualText(text) {
     this.text = String(text)
+    this.version = version
+    this.type = nodeType.VirtualText
 }
-
-VirtualText.prototype.version = version
-VirtualText.prototype.type = nodeType.VirtualText
